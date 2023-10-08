@@ -43,7 +43,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const getAllDatas = async () => {
     try {
-      await fetch(API, {
+      await fetch(API +"/get" ,{
         method: "GET",
         headers: {
           //fet(api,{}).then(json).then(data)
