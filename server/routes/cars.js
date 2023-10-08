@@ -2,7 +2,7 @@ const express = require("express");
 const {Cars} = require("../models/car");
 const router = express.Router();
 
-router.get("/",async(req,res)=>{
+router.get("/get",async(req,res)=>{
 try {
     const allDatas=await Cars.find()
     res.send({status:"ok",data:allDatas})
